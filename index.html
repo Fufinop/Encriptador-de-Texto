@@ -9,43 +9,36 @@
 	</head>
 	<body>
 		<div id="app">
-			<nav></nav>
-			<footer>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<p>Encriptador de Texto</p>
-							<p>&copy; 2023. Todos los derechos reservados.</p>
-						</div>
-						<div class="col-md-6">
-							<ul class="social-media">
-								<li>
-									<a href="https://twitter.com/Fufinop"
-										><img src="/logos/twitter.png" alt="Twitter"
-									/></a>
-								</li>
-								<li>
-									<a href="https://www.instagram.com/Fufinop/"
-										><img src="/logos/instagram.png" alt="Instagram"
-									/></a>
-								</li>
-								<li>
-									<a
-										href="https://www.linkedin.com/in/ernesto-de-la-rosa-zamora/"
-										><img src="/logos/likedin.png" alt="LinkedIn"
-									/></a>
-								</li>
-								<li>
-									<a href="https://github.com/Fufinop/Encriptador-de-Texto"
-										>ver código fuente</a
-									>
-								</li>
-							</ul>
-						</div>
-					</div>
+			<div class="encriptar">
+				<textarea
+					name="texto"
+					class="texto"
+					id="texto"
+					cols="30"
+					rows="10"
+					placeholder="Ingresa el texto aquí"></textarea>
+			</div>
+			<div class="requerimientos">
+				<p>Solo letras minusculas y sin acentos</p>
+			</div>
+			<div class="botones">
+				<button class="btn-encriptar" type="button" onclick="encriptar()">
+					Encriptar
+				</button>
+				<button class="btn-desencriptar" type="button" onclick="desencriptar()">
+					Desencriptar
+				</button>
+			</div>
+			<div class="encriptado" id="PadreEncriptado">
+				<img src="img/boy.png" alt="chico con una lupa" id="boy" />
+				<div class="mensajeEncriptado">
+					<h2 id="tituloMsg">Ningun mensaje fue encontrado</h2>
+					<p id="parrafo">
+						Ingresa el texto que deseas encriptar o desencriptar
+					</p>
 				</div>
-			</footer>
+			</div>
 		</div>
-		<script type="module" src="/main.js"></script>
+		<script src="/main.js"></script>
 	</body>
 </html>
