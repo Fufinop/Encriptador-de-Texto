@@ -1,5 +1,7 @@
+[![Vista previa](Preview.png)](https://encriptador-de-texto-two.vercel.app/)
+
 <p align="center">
-  <img src="Preview.png" alt="Vista previa" width="400" height="300">
+  [![Vista previa](Preview.png)](URL_del_enlace)
 </p>
 
 # Encriptador y desencriptador de texto
