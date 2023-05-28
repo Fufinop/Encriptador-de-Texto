@@ -40,9 +40,9 @@ function encriptar() {
 			'\')">Copiar</button>';
 	} else {
 		const codigoHTML =
-			'<img src="img/error.png" alt="chico con una lupa" id="boy" />' +
+			'<img src="img/error.png" alt="signo de error" id="boy" />' +
 			'<div class="mensajeEncriptado">' +
-			'<h2 id="tituloMsg">Ningun mensaje fue encontrado</h2>' +
+			'<h2 id="tituloMsg">Ningún mensaje fue encontrado</h2>' +
 			'<p id="parrafo">Ingresa el texto que deseas encriptar</p>' +
 			'</div>';
 		PE.innerHTML = codigoHTML;
@@ -53,6 +53,10 @@ function desencriptar() {
 	let textoS = document.getElementById('texto').value;
 	let texto = quitarAcentos(textoS.toLowerCase());
 	const PE = document.getElementById('PadreEncriptado');
+
+	while (PE.firstChild) {
+		PE.removeChild(PE.firstChild);
+	}
 
 	let textoCifrado = texto
 		.replace(/enter/gi, 'e')
@@ -72,7 +76,7 @@ function desencriptar() {
 		const codigoHTML =
 			'<img src="img/error.png" alt="chico con una lupa" id="boy" />' +
 			'<div class="mensajeEncriptado">' +
-			'<h2 id="tituloMsg">Ningun mensaje fue encontrado</h2>' +
+			'<h2 id="tituloMsg">Ningún mensaje fue encontrado</h2>' +
 			'<p id="parrafo">Ingresa el texto que deseas desencriptar</p>' +
 			'</div>';
 
