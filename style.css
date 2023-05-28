@@ -259,7 +259,7 @@
 .icono {
 	width: 15px; /* Ajusta el tamaño del icono según tus necesidades */
 	height: 15px;
-	background-image: url(Icon.svg);
+	background-image: url(public\img\Icon.svg);
 	background-size: cover;
 	/* Otros estilos de posición, color, etc. según tus preferencias */
 }

@@ -1,3 +1,9 @@
+const buttonEncriptar = document.getElementById('buttonEncriptar');
+const buttonDesencriptar = document.getElementById('buttonDesencriptar');
+
+buttonEncriptar.addEventListener('click', encriptar);
+buttonDesencriptar.addEventListener('click', desencriptar);
+
 function quitarAcentos(texto) {
 	return texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 }
